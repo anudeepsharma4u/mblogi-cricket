@@ -31,6 +31,11 @@ Keep your users upto date with the ball by ball cricket scores. MBlogi Cricket t
    I. Current: It will display short details of ongoing matches with auto refresh for every 20secs
    II. Recent: It will display 4 recent matches 
    III: Fixtures : It will display 4 upcoming matches
+   
+Upcoming Features:
+1. Player profiles with full statistics
+2. Team Ranking and details
+And many more..,
 
 
 Note: You'll need an MBlogi Cricket API key to use it. Get a free API KEY from <a href="http://cric.mblogi.com/mblogi-cricket-api/" target="_blank">MBlogi Cricket API</a>
