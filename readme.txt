@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: md7waseem
-Tags: Cricket live score, Cricket widget, Cricket Scores, IPL Scores, Cricket Gossips, Cricket Statistics, 
+Tags: Cricket live score, Cricket widget, Cricket Scores, IPL Scores, Cricket Gossips, Cricket Statistics, cricket full score, Cricket, IPL 
 Requires at least: 3.4
 Tested up to: 3.6.1
 Stable tag: 1
@@ -51,7 +51,7 @@ Note: You'll need an MBlogi Cricket API key to use it. Get a free API KEY from <
 6. Place the [mblogi_cricket_fullscore] shortcode in a page for Cricket match full score board.
 7. Enter the API KEY in your MBlogi Cricket setting page.
 8. In MBlogi settings page select Archive page on which you pasted [mblogi_cricket_archive].
-9 In MBlogi settings page select Fullscoreboard on which you pasted [mblogi_cricket_fullscore] else it will not work.
+9  In MBlogi settings page select Fullscoreboard on which you pasted [mblogi_cricket_fullscore] else it will not work.
 10. Place Live Crikcet widget in widget area
 	
 
@@ -63,7 +63,9 @@ Please follow complete installation instructions.
 
 == Screenshots ==
 
-1. Visit <a href="http://cric.mblogi.com" target="_blank">MBlogi Cricket</a> for demo.
+1. /assets/screenshot1.jpg
+
+2. /assets/screenshot2.jpg
 
 == Changelog ==
 
