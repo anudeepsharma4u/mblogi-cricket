@@ -7,7 +7,7 @@ Stable tag: 1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Show the cricket live scores and statistics on your blog.
+Show the cricket live scores, full score board, archive, fixtures and statistics on your blog.
 
 == Description ==
 
