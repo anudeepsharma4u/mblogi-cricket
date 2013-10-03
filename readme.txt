@@ -2,7 +2,7 @@
 Contributors: md7waseem
 Tags: Cricket live score, Cricket widget, Cricket Scores, IPL Scores, Cricket Gossips, Cricket Statistics, 
 Requires at least: 3.4
-Tested up to: 3.6
+Tested up to: 3.6.1
 Stable tag: 1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -19,7 +19,7 @@ Visit <a href="http://cric.mblogi.com" target="_blank">MBlogi Cricket</a> for de
 
 Features include:
 
-Keep your users upto date with the ball by ball cricket scores. MBlogi Cricket takes live data from cri.mblogi.com about the live, recent and fixture on the International and Non-international cricket and displays it on your blog!
+Keep your users upto date with the ball by ball cricket scores. MBlogi Cricket takes live data from cric.mblogi.com about the live, recent and fixture on the International and Non-international cricket and displays it on your blog!
 
 
 Note: You'll need an MBlogi Cricket API key to use it. Get a free API KEY from <a href="http://cric.mblogi.com/mblogi-cricket-api/" target="_blank">MBlogi Cricket API</a>
@@ -34,7 +34,7 @@ Note: You'll need an MBlogi Cricket API key to use it. Get a free API KEY from <
 5. Place the [mblogi_cricket_current_series] shortcode in a page for Cricket Ongoing Series.
 6. Place the [mblogi_cricket_fullscore] shortcode in a page for Cricket match full score board.
 7. Enter the API KEY in your MBlogi Cricket setting page.
-8. In MBlogi settings page select Archive page on which you pasted [mblogi_cricket_archive]
+8. In MBlogi settings page select Archive page on which you pasted [mblogi_cricket_archive].
 9 In MBlogi settings page select Fullscoreboard on which you pasted [mblogi_cricket_fullscore] else it will not work.
 10. Place Live Crikcet widget in widget area
 	
