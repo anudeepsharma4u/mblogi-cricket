@@ -21,6 +21,17 @@ Features include:
 
 Keep your users upto date with the ball by ball cricket scores. MBlogi Cricket takes live data from cric.mblogi.com about the live, recent and fixture on the International and Non-international cricket and displays it on your blog!
 
+1. Full Score Board: View Match full score board of every match. If a match is live/ongoing then scoreboard will be refreshed for every 20secs.
+
+2. Ongoing Series: Its display ongoing series matches details.
+
+3. Archive: Its will display all match details and scoreboard from 1888 to till now.
+
+4. Widget: 
+   I. Current: It will display short details of ongoing matches with auto refresh for every 20secs
+   II. Recent: It will display 4 recent matches 
+   III: Fixtures : It will display 4 upcoming matches
+
 
 Note: You'll need an MBlogi Cricket API key to use it. Get a free API KEY from <a href="http://cric.mblogi.com/mblogi-cricket-api/" target="_blank">MBlogi Cricket API</a>
 

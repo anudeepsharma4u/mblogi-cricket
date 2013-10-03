@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: MBlogi cricket
-Plugin URI: http://cricket.mblogi.com
+Plugin Name: MBlogi Cricket
+Plugin URI: http://cric.mblogi.com
 Description: Live Cricket Scores
 Author: MBlogi
 Version: 1.0.0
