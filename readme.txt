@@ -13,7 +13,7 @@ Show the cricket live scores and statistics on your blog.
 
 = What does MBlogi Cricket do? =
 
-<a href="http:cric.mblogi.com"MBlogi Cricket</a> allows you to easily display Live Scores and statistics of Cricket on your site. The plugin is relatively easy to setup.
+<a href="http:cric.mblogi.com" target="_blank">MBlogi Cricket</a> allows you to easily display Live Scores and statistics of Cricket on your site. The plugin is relatively easy to setup.
 
 Visit <a href="http:cric.mblogi.com" target="_blank">MBlogi Cricket</a> for demo
 
