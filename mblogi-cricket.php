@@ -4,7 +4,7 @@ Plugin Name: MBlogi Cricket
 Plugin URI: http://cric.mblogi.com
 Description: Live Cricket Scores
 Author: MBlogi
-Version: 1.0.0
+Version: 1.0.1
 Author URI: https://mblogitech.com
 */
 $siteurl = get_option('siteurl');
