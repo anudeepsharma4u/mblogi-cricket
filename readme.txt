@@ -74,4 +74,5 @@ Please follow complete installation instructions.
 
 == Upgrade Notice ==
 
-= 1.0.0 =
+= 1.0.1 =
+* Strike bowler font size has been bold.
