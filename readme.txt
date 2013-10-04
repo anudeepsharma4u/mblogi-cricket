@@ -63,9 +63,9 @@ Please follow complete installation instructions.
 
 == Screenshots ==
 
-1. /assets/screenshot1.jpg
+1. Full Score Board and widget screenshot
 
-2. /assets/screenshot2.jpg
+2. Archive and widget screenshot
 
 == Changelog ==
 
