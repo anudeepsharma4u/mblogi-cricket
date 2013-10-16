@@ -72,7 +72,14 @@ Please follow complete installation instructions.
 = 1.0.0 =
 * Public release
 
-== Upgrade Notice ==
-
 = 1.0.1 =
 * Strike bowler font size has been bold.
+
+= 1.0.2 =
+* Small changes in widgets.
+
+== Upgrade Notice ==
+
+= 1.0.2 =
+* Upgrade to this version for fixture match timings.
+

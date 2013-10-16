@@ -135,7 +135,7 @@ print $mat[2]['batting']." ".$mat[2]['runs']."/".$mat[2]['wickets'];
 		 <?php foreach($rjson as $midr)
 {  ?>
 			<div class="mbcmatch"><a href="<?php echo $sturl."/?mid=".$midr['mid']; ?>"><?php echo $midr['Team1']; ?> VS <?php echo $midr['Team2']; ?></a></div>
-			<span><?php echo $midr['startdate']; ?>, <?php echo $midr['Seriesname']; ?> <br/><strong><?php print $midr['result']; ?></strong></span>
+			<span><?php echo $midr['Seriesname']; ?> <br/><?php echo $midr['startdate']; ?>, <strong><?php print $midr['result']; ?></strong></span>
 			<?php } ?>
 		 </li></ul>
 		 <li class="mbclirchwidget" style="color: #fff;">Fixtures</li>
@@ -143,7 +143,7 @@ print $mat[2]['batting']." ".$mat[2]['runs']."/".$mat[2]['wickets'];
 			<?php foreach($fjson as $midf)
 { ?>
 			 <div class="mbcmatch"><a href="#"><?php echo $midf['Team1']; ?> VS <?php echo $midf['Team2']; ?></a></div>
-			 <span><?php echo $midf['startdate']; ?>, <?php echo $midf['Seriesname']; ?></span>
+			 <span><?php echo $midf['startdate']; ?>, <?php echo $midf['ISTtime']; ?> IST<br/> <?php echo $midf['Seriesname']; ?></span>
 			<?php } ?>
 		
 		</li>
