@@ -69,17 +69,23 @@ Please follow complete installation instructions.
 
 == Changelog ==
 
-= 1.0.0 =
-* Public release
-
-= 1.0.1 =
-* Strike bowler font size has been bold.
+= 1.0.3 =
+* Some bugs has been fixed.
 
 = 1.0.2 =
 * Small changes in widgets.
 
+= 1.0.1 =
+* Strike bowler font size has been bold.
+
+= 1.0.0 =
+* Public release
+
+
+
+
 == Upgrade Notice ==
 
-= 1.0.2 =
-* Upgrade to this version for fixture match timings.
+= 1.0.3 =
+* Upgrade to this version.
 

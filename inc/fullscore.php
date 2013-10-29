@@ -142,10 +142,12 @@ foreach($inn['batmen'] as $bat)
 <tr class="mbctr"><td class="mbctd"><?php print $bat['shortname']; ?></td><td class="mbctd"><?php print $bat['outdesc']; ?></td><td class="mbctd"><?php print $bat['runs']; ?></td><td class="mbctd"><?php print $bat['balls']; ?></td><td class="mbctd"><?php print $bat['fours']; ?></td><td class="mbctd"><?php print $bat['six']; ?></td><td class="mbctd"><?php if($bat['strikerate'] != "") { print $bat['strikerate']; } else { $rgyuikj = $bat['runs']/$bat['balls']*100; echo number_format($rgyuikj, 2, '.', ''); }?></td></tr>
 <?php 
 }
+if ($inn['didnt'] != null)
+{
 foreach($inn['didnt'] as $didntbat)
 { ?>
 <tr class="mbctr"><td class="mbctd"><?php echo $didntbat['fullname']; ?></td><td class="mbctd" colspan="6"></td></tr>
-<?php } ?>
+<?php } } ?>
 <tr class="mbctr"><td class="mbctd" colspan="2" align="right">Extras(b: <?php print $inn['extras']['Byes']; ?>, lb: <?php print $inn['extras']['Leg byes']; ?>, wb: <?php print $inn['extras']['Wideballs']; ?>, nb: <?php print $inn['extras']['Noball']; ?>, p: <?php print $inn['extras']['Penalty']; ?>): </td><td class="mbctd"><?php print $inn['extras']['Total']; ?></td><td class="mbctd" colspan="4" align="left">
 </td></tr>
 <tr class="mbctr"><td class="mbctd" colspan="2" align="right">Total: </td><td class="mbctd"><b><?php print $inn['runs']; ?></b></td><td class="mbctd" colspan="4" align="left">(<?php print $inn['wickets']; ?> wkts, <?php print $inn['overs'];?> overs)</td></tr>
@@ -222,7 +224,10 @@ $inn = $json[$s-2];
 ?>
 <table class="mbctable">
 <tr class="mbctr"><th class="mbcth" class="mbcth" width="65%" colspan="2" style="text-align:left; padding-left:15px; color:#FFF;" ><?php print $inn['battingteamname'];?> Innings</th><th class="mbcth" class="mbcth" width="8%" style="color:#FFF;" >Runs</th><th class="mbcth" class="mbcth" width="8%" style="color:#FFF;" >Balls</th><th class="mbcth" class="mbcth" width="6%" style="color:#FFF;"  >4's</th><th class="mbcth" class="mbcth" width="6%" style="color:#FFF;"  >6's</th><th class="mbcth" class="mbcth" width="8%" style="color:#FFF;" >SR</th></tr>
-<?php foreach($inn['batmen'] as $bat)
+<?php 
+if($inn['batmen'] != null)
+{
+foreach($inn['batmen'] as $bat)
 { ?>
 <tr class="mbctr"><td class="mbctd"><?php if($bat['outdesc']=='batting'){ print "<b>"; } print $bat['shortname']; if($bat['strikestatus'] == 'striker' ){ print "*"; } if($bat['outdesc']=='batting'){ print "</b>"; }?></td>
 <td class="mbctd"><?php if($bat['outdesc']=='batting'){ print "<b>"; } print $bat['outdesc']; if($bat['outdesc']=='batting'){ print "</b>"; }?></td>
@@ -231,11 +236,13 @@ $inn = $json[$s-2];
 <td class="mbctd"><?php if($bat['outdesc']=='batting'){ print "<b>"; } print $bat['fours']; if($bat['outdesc']=='batting'){ print "</b>"; }?></td>
 <td class="mbctd"><?php if($bat['outdesc']=='batting'){ print "<b>"; } print $bat['six']; if($bat['outdesc']=='batting'){ print "</b>"; } ?></td>
 <td class="mbctd"><?php if($bat['outdesc']=='batting'){ print "<b>"; } if($bat['strikerate'] != "") { print $bat['strikerate']; } else { $rgyuikj = $bat['runs']/$bat['balls']*100; echo number_format($rgyuikj, 2, '.', ''); } if($bat['outdesc']=='batting'){ print "</b>"; } ?></td></tr>
-<?php } 
+<?php }  }
+if($inn['didnt'] != null)
+{
 foreach($inn['didnt'] as $didntbat)
 { ?>
 <tr class="mbctr"><td class="mbctd"><?php echo $didntbat['fullname']; ?></td><td class="mbctd" colspan="6"></td></tr>
-<?php } ?>
+<?php } } ?>
 <tr class="mbctr"><td class="mbctd" colspan="2" align="right">Extras(b: <?php print $inn['extras']['Byes']; ?>, lb: <?php print $inn['extras']['Leg byes']; ?>, wb: <?php print $inn['extras']['Wideballs']; ?>, nb: <?php print $inn['extras']['Noball']; ?>, p: <?php print $inn['extras']['Penalty']; ?>): </td><td class="mbctd"><?php print $inn['extras']['Total']; ?></td><td class="mbctd" colspan="4" align="left">
 </td></tr>
 <tr class="mbctr"><td class="mbctd" colspan="2" align="right">Total: </td><td class="mbctd"><b><?php print $inn['runs']; ?></b></td><td class="mbctd" colspan="4" align="left">(<?php print $inn['wickets']; ?> wkts, <?php print $inn['overs'];?> overs)</td></tr>
@@ -274,10 +281,13 @@ echo $bat['wicketnumber']."/".$bat['teamruns']."(".$bat['shortname'].",".$bat['O
 </div>
 <table class="mbctable ">
 <tr class="mbctr"><th class="mbcth" class="mbcth"  style="color:#FFF;">Bowler</th><th class="mbcth" class="mbcth"  style="color:#FFF;">Overs</th><th class="mbcth" class="mbcth"  style="color:#FFF;">M</th><th class="mbcth" class="mbcth"  style="color:#FFF;">R</th><th class="mbcth" class="mbcth"  style="color:#FFF;">Wkt</th><th class="mbcth" class="mbcth"  style="color:#FFF;">Nb</th><th class="mbcth" class="mbcth"  style="color:#FFF;">Wb</th><th class="mbcth" class="mbcth"  style="color:#FFF;">Eco</th></tr>
-<?php foreach($inn['bowler'] as $bow)
+<?php 
+if($inn['bowler'] != null)
+{
+foreach($inn['bowler'] as $bow)
 { ?>
 <tr class="mbctr"><td class="mbctd"><?php if($bow['strikestatus'] != '') {echo '<b>'; } print $bow['shortname']; if($bow['strikestatus'] == 'striker') {echo '*';} if($bow['strikestatus'] != '') {echo '</b>';} ?></td><td class="mbctd"><?php if($bow['strikestatus'] != '') {echo '<b>';} print $bow['overs']; if($bow['strikestatus'] != '') {echo '</b>';} ?></td><td class="mbctd"><?php if($bow['strikestatus'] != '') {echo '<b>'; } print $bow['maiden']; if($bow['strikestatus'] != '') {echo '</b>';} ?></td><td class="mbctd"><?php if($bow['strikestatus'] != '') {echo '<b>'; } print $bow['run']; if($bow['strikestatus'] != '') {echo '</b>';} ?></td><td class="mbctd"><?php if($bow['strikestatus'] != '') {echo '<b>'; } print $bow['wickets']; if($bow['strikestatus'] != '') {echo '</b>';} ?></td><td class="mbctd"><?php if($bow['strikestatus'] != '') {echo '<b>'; } print $bow['noball']; if($bow['strikestatus'] != '') {echo '</b>';} ?></td><td class="mbctd"><?php if($bow['strikestatus'] != '') {echo '<b>'; } print $bow['wideballs']; if($bow['strikestatus'] != '') {echo '</b>';} ?></td><td class="mbctd"><?php if($bow['strikestatus'] != '') {echo '<b>'; } if($bow['strikerate'] != "") { print $bow['strikerate']; } else { $rgthuijko = $bow['run']/$bow['overs'];  echo number_format($rgthuijko, 2, '.', '');}  if($bow['strikestatus'] != '') {echo '</b>';} ?></td></tr>
-<?php } ?>
+<?php } } ?>
 </table>
 </div>
 <?php for($i=$s-3;$i>=1;$i--)
@@ -290,10 +300,12 @@ $inn = $json[$i];
 { ?>
 <tr class="mbctr"><td class="mbctd"><?php if($bat['strikestatus'] != ''&& $bat['outdesc']=='batting'  ){ print "<b>"; }print $bat['shortname']; if($bat['strikestatus'] == 'striker' && $bat['outdesc']=='batting' ){ print "*"; }if($bat['strikestatus'] != ''&& $bat['outdesc']=='batting'  ){ print "</b>"; } ?></td><td class="mbctd"><?php print $bat['outdesc']; ?></td><td class="mbctd"><?php print $bat['runs']; ?></td><td class="mbctd"><?php print $bat['balls']; ?></td><td class="mbctd"><?php print $bat['fours']; ?></td><td class="mbctd"><?php print $bat['six']; ?></td><td class="mbctd"><?php if($bat['strikerate'] != "") { print $bat['strikerate']; } else { $rgyuikj = $bat['runs']/$bat['balls']*100; echo number_format($rgyuikj, 2, '.', ''); }?></td></tr>
 <?php } 
+if ($inn['didnt'] != null)
+{
 foreach($inn['didnt'] as $didntbat)
 { ?>
 <tr class="mbctr"><td class="mbctd"><?php echo $didntbat['fullname']; ?></td><td class="mbctd" colspan="6"></td></tr>
-<?php } ?>
+<?php } } ?>
 <tr class="mbctr"><td class="mbctd" colspan="2" align="right">Extras(b: <?php print $inn['extras']['Byes']; ?>, lb: <?php print $inn['extras']['Leg byes']; ?>, wb: <?php print $inn['extras']['Wideballs']; ?>, nb: <?php print $inn['extras']['Noball']; ?>, p: <?php print $inn['extras']['Penalty']; ?>): </td><td class="mbctd"><?php print $inn['extras']['Total']; ?></td><td class="mbctd" colspan="4" align="left">
 </td></tr>
 <tr class="mbctr"><td class="mbctd" colspan="2" align="right">Total: </td><td class="mbctd"><b><?php print $inn['runs']; ?></b></td><td class="mbctd" colspan="4" align="left">(<?php print $inn['wickets']; ?> wkts, <?php print $inn['overs'];?> overs)</td></tr>
