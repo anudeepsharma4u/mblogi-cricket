@@ -31,8 +31,7 @@ $sql_stmtss = "SELECT * from $tables where id='$c'";
 $sqlvalsss = $wpdb->get_results($sql_stmtss);
 $ass = $sqlvalsss[0]->post_name;
 $sturla = $styurli."/".$ass;
- $url = "http://cricketapi.mblogi.com/yearseriesjson.php?api=".$a."&ymdets=".$yrsmatc;
-//"http://cri.masticreators.com/archievejson.php?i=".$i."&j=".$j."&api=".$a;
+$url = "http://cricketapi.mblogi.com/yearseriesjson.php?api=".$a."&ymdets=".$yrsmatc;
 $json = file_get_contents($url);
 $json = json_decode($json,true);
 foreach($json as $json)
